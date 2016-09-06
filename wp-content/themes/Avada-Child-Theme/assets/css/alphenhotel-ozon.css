@@ -1,0 +1,86 @@
+/* line 2, sass/alphenhotel-ozon.scss */
+.renter-box-holder {
+  position: relative;
+  z-index: 999;
+}
+
+/* line 6, sass/alphenhotel-ozon.scss */
+.renter-box {
+  background: rgba(236, 210, 69, 0.95);
+  color: black;
+  outline: 5px solid rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 30px 50px -25px #4e4c42;
+  -moz-box-shadow: 0 30px 50px -25px #4e4c42;
+  box-shadow: 0 30px 50px -25px #4e4c42;
+}
+
+/* line 15, sass/alphenhotel-ozon.scss */
+.rent-datepicker {
+  padding: 0 25px;
+}
+/* line 17, sass/alphenhotel-ozon.scss */
+.rent-datepicker .picker-holder {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+/* line 23, sass/alphenhotel-ozon.scss */
+.rent-datepicker .picker-holder .picker {
+  flex-grow: 1;
+  position: relative;
+}
+/* line 27, sass/alphenhotel-ozon.scss */
+.rent-datepicker .picker-holder .picker input[type=text] {
+  border: 1px solid #d0ba41;
+  text-align: center;
+  font-size: 28px;
+  line-height: 28px;
+  padding: 28px 0 !important;
+  color: #19a697;
+  -webkit-box-shadow: inset 0 -1px 8px #c7c7c7;
+  -moz-box-shadow: inset 0 -1px 8px #c7c7c7;
+  box-shadow: inset 0 -1px 8px #c7c7c7;
+}
+/* line 38, sass/alphenhotel-ozon.scss */
+.rent-datepicker .picker-holder .picker .title {
+  font-family: 'Bookman Old Style', serif;
+  text-align: center;
+  font-size: 22px;
+  padding: 5px 0;
+}
+/* line 45, sass/alphenhotel-ozon.scss */
+.rent-datepicker .picker-holder .picker:after {
+  content: "\f073";
+  font-family: 'FontAwesome';
+  position: absolute;
+  pointer-events: none;
+  bottom: 0;
+  right: 15px;
+  line-height: 58px;
+  font-size: 24px;
+  color: #d0d0d0;
+}
+/* line 58, sass/alphenhotel-ozon.scss */
+.rent-datepicker .picker-holder .picker-separator {
+  font-size: 59px;
+  padding: 0 25px;
+  margin-top: 26px;
+  color: #fff;
+}
+/* line 66, sass/alphenhotel-ozon.scss */
+.rent-datepicker .search-btn {
+  padding: 58px 0 0 25px;
+}
+/* line 68, sass/alphenhotel-ozon.scss */
+.rent-datepicker .search-btn button {
+  background: #127a6f;
+  padding: 0 15px;
+  height: 58px;
+  line-height: 58px;
+  font-size: 22px;
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}

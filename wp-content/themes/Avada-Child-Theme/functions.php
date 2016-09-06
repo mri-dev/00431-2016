@@ -12,6 +12,11 @@ function theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
+function ao_enqueue_styles() {
+    wp_enqueue_style( 'alphenhotel-ozon', IFROOT . '/assets/css/alphenhotel-ozon.css?' . ( (DEVMODE === true) ? time() : '' ) );
+}
+add_action( 'wp_enqueue_scripts', 'ao_enqueue_styles', 100 );
+
 function avada_lang_setup() {
 	$lang = get_stylesheet_directory() . '/languages';
 	load_child_theme_textdomain( 'Avada', $lang );
