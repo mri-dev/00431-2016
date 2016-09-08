@@ -43,7 +43,7 @@ class AO_RentDatepicker extends AvadaTemplate
         $attr = shortcode_atts( $defaults, $attr );
 
         /* Set up the default variables. */
-        $r->_('<div class="rent-datepicker">');
+        $r->_('<div><div class="rent-datepicker" ng-controller="DatePickerRoomSearch" ng-app="AlphenHotel" ng-cloak>');
 
         	$r->_($r->row_start());
         		$r->_($r->column(3, 4, '
@@ -51,14 +51,14 @@ class AO_RentDatepicker extends AvadaTemplate
                         <div class="picker">
     						<div class="title">'.__('Arrive', 'hotel').'</div>
     						<div class="input">
-    							<input type="text" id="datepicker_from" name="date_from" value="'.date('Y / m / d', strtotime('+1 days')).'" placeholder="'.date('Y / m / d', strtotime('+1 days')).'">
+                                <md-datepicker ng-model="arrive"></md-datepicker>
     						</div>
             			</div>
                         <div class="picker-separator">&mdash;</div>
                         <div class="picker">
                             <div class="title">'.__('Departure', 'hotel').'</div>
                             <div class="input">
-                                <input type="text" id="datepicker_from" name="date_from" value="'.date('Y / m / d', strtotime('+ 3 days')).'" placeholder="'.date('Y / m / d', strtotime('+3 days')).'">
+                                <md-datepicker ng-model="deperture"></md-datepicker>
                             </div>
                         </div>
                     </div>', 'no'));
@@ -67,7 +67,7 @@ class AO_RentDatepicker extends AvadaTemplate
                     </div>', 'no', true));
          	$r->_($r->row_end());
 
-        $r->_('</div>');
+        $r->_('</div></div>');
 
 
         /* Return the output of the tooltip. */

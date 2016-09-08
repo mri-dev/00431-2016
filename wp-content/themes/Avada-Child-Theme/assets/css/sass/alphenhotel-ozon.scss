@@ -4,16 +4,58 @@
     z-index: 999;
 }
 .renter-box {
-    background:rgba(236, 210, 69, 0.95);
+    background:rgba(236, 210, 69, 0.98);
     color: black;
     outline: 5px solid rgba(255, 255, 255, 0.25);
     -webkit-box-shadow: 0 30px 50px -25px #4e4c42;
     -moz-box-shadow: 0 30px 50px -25px #4e4c42;
     box-shadow: 0 30px 50px -25px #4e4c42;
+
+    h2 {
+        text-align: center;
+        margin: 0;
+        background: #00c3af;
+        padding: 15px 0;
+        color: white;
+    }
+}
+/* Angular Datepicker*/
+.md-datepicker-calendar-pane{
+    z-index: 9999;
+    position: absolute;
 }
 
+
 .rent-datepicker{
-    padding: 0 25px;
+    padding: 0 25px 15px 25px;
+
+    .md-datepicker-input {
+        font-size: 24px;
+        padding: 10px 10px 10px 50px;
+    }
+    .md-datepicker-triangle-button {
+        top: 18px;
+    }
+    .md-datepicker-input-container{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        line-height: 24px;
+    }
+    .md-button{
+        position: absolute;
+        z-index: 1000;
+        line-height: 53px;
+        height: 53px;
+        width: 53px;
+        margin: 0;
+    }
+    md-datepicker {
+        background: #fff;
+        padding-left: 0;
+        display: block;
+    }
+
     .picker-holder {
         display: flex;
         justify-content: space-between;
@@ -24,37 +66,13 @@
             flex-grow: 1;
             position: relative;
 
-            input[type=text] {
-                border: 1px solid #d0ba41;
-                text-align: center;
-                font-size: 28px;
-                line-height: 28px;
-                padding: 28px 0 !important;
-                color: lighten($color-darkgreen, 10%);
-                -webkit-box-shadow: inset 0 -1px 8px #c7c7c7;
-                -moz-box-shadow: inset 0 -1px 8px #c7c7c7;
-                box-shadow: inset 0 -1px 8px #c7c7c7;
-            }
             .title {
                 font-family: 'Bookman Old Style', serif;
-                text-align: center;
-                font-size: 22px;
+                text-align: left;
+                font-size: 18px;
                 padding: 5px 0;
             }
-
-            &:after {
-                content: "\f073";
-                font-family: 'FontAwesome';
-                position: absolute;
-                pointer-events: none;
-                bottom: 0;
-                right: 15px;
-                line-height: 58px;
-                font-size: 24px;
-                color: #d0d0d0;
-            }
         }
-
         .picker-separator {
            font-size: 59px;
             padding: 0 25px;
@@ -64,7 +82,7 @@
     }
 
     .search-btn {
-        padding: 58px 0 0 25px;
+        padding: 54px 0 0 25px;
         button {
             background: $color-darkgreen;
             padding: 0 15px;
