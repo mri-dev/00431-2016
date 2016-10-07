@@ -96,3 +96,198 @@
         }
     }
 }
+
+.room-rent-container{
+  background: #ffffff;
+  min-height: 500px;
+  padding: 25px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+
+  h1 {
+    font-size: 38px !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  h2 {
+    font-size: 18px !important;
+    text-align: center;
+    color: #5c5c5c;
+  }
+
+  .room-rent-wrapper {
+    margin: 0 auto;
+
+    h3 {
+      color: black;
+      margin: 25px 0 10px 0;
+      text-align: center;
+
+      .stn {
+        background: $color-yellow;
+        width: 32px;
+        height: 32px;
+        line-height: 30px;
+        margin: 5px auto;
+        font-size: 20px;
+        color: #ffffff;
+        border-radius: 40px;
+      }
+    }
+    .input-holder {
+      display: flex;
+      flex-wrap: wrap;
+
+      .input{
+        padding: 0 15px 5px 15px;
+        flex-basis: 25%;
+
+        label {
+          color: #737373;
+          font-size: 13px;
+          font-style: italic;
+        }
+
+        input[type=checkbox],
+        input[type=text],
+        input[type=number],
+        select,
+        textarea {
+          width: 100%;
+          display: block;
+          line-height: 40px;
+          padding: 0 10px;
+          height: auto;
+          font-weight: bold;
+          font-size: 15px;
+          border: 1px solid #dadada;
+          color: #127a6f;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+        }
+
+        input[type=checkbox]{
+          display: none;
+        }
+
+        input[type=checkbox] + label{
+          width: 42px;
+          height: 42px;
+          margin: 0;
+          background: #fff;
+          border: 1px solid #d7d7d7;
+          cursor: pointer;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          display: block;
+          position: relative;
+
+          &:before {
+            content: "\f00d";
+            font-size: 28px;
+            line-height: 40px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-family: 'FontAwesome';
+            right: 0;
+            width: 40px;
+            text-align: center;
+            color: #e2e2e2;
+            font-style: normal;
+          }
+        }
+
+        input[type=checkbox]:checked + label{
+          background: $color-green;
+          &:before {
+            content: "\f00c";
+            color: white;
+          }
+        }
+
+        select {
+          width: 100%;
+          height: 42px;
+        }
+
+        &.date_from,
+        &.date_to {
+          flex-basis: 50%;
+          position: relative;
+
+          input[type=text].datepicker {
+            text-align: center;
+            font-size: 26px;
+            line-height: 50px;
+            cursor: pointer;
+            padding-right: 35px;
+          }
+
+          &:after {
+            content: "\f073";
+            position: absolute;
+            right: 15px;
+            top: 31px;
+            width: 40px;
+            height: 40px;
+            font-size: 22px;
+            font-family: 'FontAwesome';
+            line-height: 40px;
+            text-align: center;
+            pointer-events: none;
+          }
+        }
+
+        &.contact_msg{
+          flex-basis: 100%;
+        }
+
+        &.input-label{
+          flex-basis: 100%;
+        }
+      }
+    }
+
+
+    &.date-container{
+      width: 60%;
+    }
+  }
+}
+
+.ui-widget-header{
+  background: $color-yellow;
+  border: 1px solid darken($color-yellow, 10%);
+  color: #463d10;
+}
+.ui-state-default, .ui-widget-content .ui-state-default{
+  color: $color-green;
+}
+#ui-datepicker-div{
+  margin-top: -33px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color: #e2e2e2;
+  font-weight: normal;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #e2e2e2;
+  font-weight: normal;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #e2e2e2;
+  font-weight: normal;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #e2e2e2;
+  font-weight: normal;
+}

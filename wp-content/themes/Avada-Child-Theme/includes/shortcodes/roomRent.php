@@ -1,8 +1,8 @@
 <?php
 
-class AO_RentDatepicker extends AvadaTemplate
+class AO_RoomRentForm extends AvadaTemplate
 {
-	const SHORTCODE_TAG = 'rent-datepicker';
+	const SHORTCODE_TAG = 'roomrentform';
 	private $render = "";
 
     /**
@@ -13,7 +13,7 @@ class AO_RentDatepicker extends AvadaTemplate
      * @return void
      */
     public function __construct()
-    {
+    { 
         /* Register shortcodes on 'init'. */
         add_action( 'init', array( &$this, 'register_shortcode' ) );
     }
@@ -43,11 +43,11 @@ class AO_RentDatepicker extends AvadaTemplate
         $attr = shortcode_atts( $defaults, $attr );
 
         /* Set up the default variables. */
-        $r->_('<div><div class="rent-datepicker">');
+        $r->_('<div><div class="room-rent-container">');
 
         	$r->_($r->row_start());
 				ob_start();
-        		include(locate_template('templates/shortcodes/rentDatePicker.php'));    
+        		include(locate_template('templates/shortcodes/roomrentform.php'));
 				$template = ob_get_contents();
 				ob_end_clean();
 				$r->_($template);
@@ -65,4 +65,4 @@ class AO_RentDatepicker extends AvadaTemplate
     }
 }
 
-new AO_RentDatepicker();
+new AO_RoomRentForm();

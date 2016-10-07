@@ -106,3 +106,216 @@
   width: 100%;
   cursor: pointer;
 }
+
+/* line 100, sass/alphenhotel-ozon.scss */
+.room-rent-container {
+  background: #ffffff;
+  min-height: 500px;
+  padding: 25px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+}
+/* line 108, sass/alphenhotel-ozon.scss */
+.room-rent-container h1 {
+  font-size: 38px !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+/* line 115, sass/alphenhotel-ozon.scss */
+.room-rent-container h2 {
+  font-size: 18px !important;
+  text-align: center;
+  color: #5c5c5c;
+}
+/* line 121, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper {
+  margin: 0 auto;
+}
+/* line 124, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper h3 {
+  color: black;
+  margin: 25px 0 10px 0;
+  text-align: center;
+}
+/* line 129, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper h3 .stn {
+  background: #f0d64d;
+  width: 32px;
+  height: 32px;
+  line-height: 30px;
+  margin: 5px auto;
+  font-size: 20px;
+  color: #ffffff;
+  border-radius: 40px;
+}
+/* line 140, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 144, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input {
+  padding: 0 15px 5px 15px;
+  flex-basis: 25%;
+}
+/* line 148, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input label {
+  color: #737373;
+  font-size: 13px;
+  font-style: italic;
+}
+/* line 158, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox],
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=text],
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=number],
+.room-rent-container .room-rent-wrapper .input-holder .input select,
+.room-rent-container .room-rent-wrapper .input-holder .input textarea {
+  width: 100%;
+  display: block;
+  line-height: 40px;
+  padding: 0 10px;
+  height: auto;
+  font-weight: bold;
+  font-size: 15px;
+  border: 1px solid #dadada;
+  color: #127a6f;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 173, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox] {
+  display: none;
+}
+/* line 177, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox] + label {
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  position: relative;
+}
+/* line 190, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox] + label:before {
+  content: "\f00d";
+  font-size: 28px;
+  line-height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: 'FontAwesome';
+  right: 0;
+  width: 40px;
+  text-align: center;
+  color: #e2e2e2;
+  font-style: normal;
+}
+/* line 206, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox]:checked + label {
+  background: #4f7838;
+}
+/* line 208, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox]:checked + label:before {
+  content: "\f00c";
+  color: white;
+}
+/* line 214, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input select {
+  width: 100%;
+  height: 42px;
+}
+/* line 220, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.date_from, .room-rent-container .room-rent-wrapper .input-holder .input.date_to {
+  flex-basis: 50%;
+  position: relative;
+}
+/* line 224, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.date_from input[type=text].datepicker, .room-rent-container .room-rent-wrapper .input-holder .input.date_to input[type=text].datepicker {
+  text-align: center;
+  font-size: 26px;
+  line-height: 50px;
+  cursor: pointer;
+  padding-right: 35px;
+}
+/* line 232, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.date_from:after, .room-rent-container .room-rent-wrapper .input-holder .input.date_to:after {
+  content: "\f073";
+  position: absolute;
+  right: 15px;
+  top: 31px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  font-family: 'FontAwesome';
+  line-height: 40px;
+  text-align: center;
+  pointer-events: none;
+}
+/* line 247, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.contact_msg {
+  flex-basis: 100%;
+}
+/* line 251, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.input-label {
+  flex-basis: 100%;
+}
+/* line 258, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper.date-container {
+  width: 60%;
+}
+
+/* line 264, sass/alphenhotel-ozon.scss */
+.ui-widget-header {
+  background: #f0d64d;
+  border: 1px solid #eccb1e;
+  color: #463d10;
+}
+
+/* line 269, sass/alphenhotel-ozon.scss */
+.ui-state-default, .ui-widget-content .ui-state-default {
+  color: #4f7838;
+}
+
+/* line 272, sass/alphenhotel-ozon.scss */
+#ui-datepicker-div {
+  margin-top: -33px;
+}
+
+/* line 276, sass/alphenhotel-ozon.scss */
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #e2e2e2;
+  font-weight: normal;
+}
+
+/* line 280, sass/alphenhotel-ozon.scss */
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #e2e2e2;
+  font-weight: normal;
+  opacity: 1;
+}
+
+/* line 285, sass/alphenhotel-ozon.scss */
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #e2e2e2;
+  font-weight: normal;
+  opacity: 1;
+}
+
+/* line 290, sass/alphenhotel-ozon.scss */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #e2e2e2;
+  font-weight: normal;
+}
