@@ -4,119 +4,54 @@
   z-index: 999;
 }
 
-/* line 6, sass/alphenhotel-ozon.scss */
-.renter-box {
-  background: rgba(236, 210, 69, 0.98);
-  color: black;
-  outline: 5px solid rgba(255, 255, 255, 0.25);
-  -webkit-box-shadow: 0 30px 50px -25px #4e4c42;
-  -moz-box-shadow: 0 30px 50px -25px #4e4c42;
-  box-shadow: 0 30px 50px -25px #4e4c42;
-}
-/* line 14, sass/alphenhotel-ozon.scss */
-.renter-box h2 {
+/* line 7, sass/alphenhotel-ozon.scss */
+.renter-box h1 {
   text-align: center;
   margin: 0;
-  background: #00c3af;
   padding: 15px 0;
   color: white;
 }
-
-/* Angular Datepicker*/
-/* line 23, sass/alphenhotel-ozon.scss */
-.md-datepicker-calendar-pane {
-  z-index: 9999;
-  position: absolute;
+/* line 14, sass/alphenhotel-ozon.scss */
+.renter-box .fusion-button-wrapper {
+  text-align: center !important;
 }
-
-/* line 29, sass/alphenhotel-ozon.scss */
-.rent-datepicker {
-  padding: 0 25px 15px 25px;
-}
-/* line 32, sass/alphenhotel-ozon.scss */
-.rent-datepicker .md-datepicker-input {
-  font-size: 24px;
-  padding: 10px 10px 10px 50px;
-}
-/* line 36, sass/alphenhotel-ozon.scss */
-.rent-datepicker .md-datepicker-triangle-button {
-  top: 18px;
-}
-/* line 39, sass/alphenhotel-ozon.scss */
-.rent-datepicker .md-datepicker-input-container {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  line-height: 24px;
-}
-/* line 45, sass/alphenhotel-ozon.scss */
-.rent-datepicker .md-button {
-  position: absolute;
-  z-index: 1000;
-  line-height: 53px;
-  height: 53px;
-  width: 53px;
-  margin: 0;
-}
-/* line 53, sass/alphenhotel-ozon.scss */
-.rent-datepicker md-datepicker {
-  background: #fff;
-  padding-left: 0;
-  display: block;
-}
-/* line 59, sass/alphenhotel-ozon.scss */
-.rent-datepicker .picker-holder {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-}
-/* line 65, sass/alphenhotel-ozon.scss */
-.rent-datepicker .picker-holder .picker {
-  flex-grow: 1;
+/* line 18, sass/alphenhotel-ozon.scss */
+.renter-box .rent-button {
+  width: 50% !important;
+  margin: 0 auto;
+  border: 5px solid #f1f0eb !important;
   position: relative;
+  font-size: 28px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 40px -10px #1b8c85;
+  -moz-box-shadow: 0 0 40px -10px #1b8c85;
+  box-shadow: 0 0 40px -10px #1b8c85;
 }
-/* line 69, sass/alphenhotel-ozon.scss */
-.rent-datepicker .picker-holder .picker .title {
-  font-family: 'Bookman Old Style', serif;
-  text-align: left;
-  font-size: 18px;
-  padding: 5px 0;
-}
-/* line 76, sass/alphenhotel-ozon.scss */
-.rent-datepicker .picker-holder .picker-separator {
-  font-size: 59px;
-  padding: 0 25px;
-  margin-top: 26px;
-  color: #fff;
-}
-/* line 84, sass/alphenhotel-ozon.scss */
-.rent-datepicker .search-btn {
-  padding: 54px 0 0 25px;
-}
-/* line 86, sass/alphenhotel-ozon.scss */
-.rent-datepicker .search-btn button {
-  background: #127a6f;
-  padding: 0 15px;
-  height: 58px;
-  line-height: 58px;
-  font-size: 22px;
-  color: white;
-  border: none;
-  width: 100%;
-  cursor: pointer;
+/* line 29, sass/alphenhotel-ozon.scss */
+.renter-box .rent-button:before {
+  position: absolute;
+  content: "";
+  top: -50px;
+  border-style: solid;
+  border-width: 25px;
+  border-color: transparent transparent #f1f0eb transparent;
+  left: 50%;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
-/* line 100, sass/alphenhotel-ozon.scss */
+/* line 44, sass/alphenhotel-ozon.scss */
 .room-rent-container {
   background: #ffffff;
+  border: 5px solid #e2e0d7;
   min-height: 500px;
   padding: 25px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
 }
-/* line 108, sass/alphenhotel-ozon.scss */
+/* line 53, sass/alphenhotel-ozon.scss */
 .room-rent-container h1 {
   font-size: 38px !important;
   font-weight: bold;
@@ -124,23 +59,23 @@
   margin: 0 0 10px 0;
   text-align: center;
 }
-/* line 115, sass/alphenhotel-ozon.scss */
+/* line 60, sass/alphenhotel-ozon.scss */
 .room-rent-container h2 {
   font-size: 18px !important;
   text-align: center;
   color: #5c5c5c;
 }
-/* line 121, sass/alphenhotel-ozon.scss */
+/* line 66, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper {
   margin: 0 auto;
 }
-/* line 124, sass/alphenhotel-ozon.scss */
+/* line 69, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper h3 {
   color: black;
   margin: 25px 0 10px 0;
   text-align: center;
 }
-/* line 129, sass/alphenhotel-ozon.scss */
+/* line 74, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper h3 .stn {
   background: #f0d64d;
   width: 32px;
@@ -151,23 +86,23 @@
   color: #ffffff;
   border-radius: 40px;
 }
-/* line 140, sass/alphenhotel-ozon.scss */
+/* line 85, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 144, sass/alphenhotel-ozon.scss */
+/* line 89, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input {
   padding: 0 15px 5px 15px;
   flex-basis: 25%;
 }
-/* line 148, sass/alphenhotel-ozon.scss */
+/* line 93, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input label {
   color: #737373;
   font-size: 13px;
   font-style: italic;
 }
-/* line 158, sass/alphenhotel-ozon.scss */
+/* line 103, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox],
 .room-rent-container .room-rent-wrapper .input-holder .input input[type=text],
 .room-rent-container .room-rent-wrapper .input-holder .input input[type=number],
@@ -186,11 +121,19 @@
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 173, sass/alphenhotel-ozon.scss */
+/* line 117, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox].missing,
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=text].missing,
+.room-rent-container .room-rent-wrapper .input-holder .input input[type=number].missing,
+.room-rent-container .room-rent-wrapper .input-holder .input select.missing,
+.room-rent-container .room-rent-wrapper .input-holder .input textarea.missing {
+  border: 1px solid red;
+}
+/* line 122, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox] {
   display: none;
 }
-/* line 177, sass/alphenhotel-ozon.scss */
+/* line 126, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox] + label {
   width: 42px;
   height: 42px;
@@ -204,7 +147,7 @@
   display: block;
   position: relative;
 }
-/* line 190, sass/alphenhotel-ozon.scss */
+/* line 139, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox] + label:before {
   content: "\f00d";
   font-size: 28px;
@@ -219,26 +162,26 @@
   color: #e2e2e2;
   font-style: normal;
 }
-/* line 206, sass/alphenhotel-ozon.scss */
+/* line 155, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox]:checked + label {
   background: #4f7838;
 }
-/* line 208, sass/alphenhotel-ozon.scss */
+/* line 157, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input input[type=checkbox]:checked + label:before {
   content: "\f00c";
   color: white;
 }
-/* line 214, sass/alphenhotel-ozon.scss */
+/* line 163, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input select {
   width: 100%;
   height: 42px;
 }
-/* line 220, sass/alphenhotel-ozon.scss */
+/* line 169, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input.date_from, .room-rent-container .room-rent-wrapper .input-holder .input.date_to {
   flex-basis: 50%;
   position: relative;
 }
-/* line 224, sass/alphenhotel-ozon.scss */
+/* line 173, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input.date_from input[type=text].datepicker, .room-rent-container .room-rent-wrapper .input-holder .input.date_to input[type=text].datepicker {
   text-align: center;
   font-size: 26px;
@@ -246,7 +189,7 @@
   cursor: pointer;
   padding-right: 35px;
 }
-/* line 232, sass/alphenhotel-ozon.scss */
+/* line 181, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input.date_from:after, .room-rent-container .room-rent-wrapper .input-holder .input.date_to:after {
   content: "\f073";
   position: absolute;
@@ -260,44 +203,68 @@
   text-align: center;
   pointer-events: none;
 }
-/* line 247, sass/alphenhotel-ozon.scss */
+/* line 196, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input.contact_msg {
   flex-basis: 100%;
 }
-/* line 251, sass/alphenhotel-ozon.scss */
+/* line 200, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.send-mail {
+  flex-basis: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+/* line 205, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.send-mail button {
+  background: #127a6f;
+  color: white;
+  padding: 15px 25px;
+  font-size: 18px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+/* line 214, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.send-mail button.in-progress {
+  background: #f0d64d;
+}
+/* line 217, sass/alphenhotel-ozon.scss */
+.room-rent-container .room-rent-wrapper .input-holder .input.send-mail button.sended {
+  background: #4f7838;
+}
+/* line 223, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper .input-holder .input.input-label {
   flex-basis: 100%;
 }
-/* line 258, sass/alphenhotel-ozon.scss */
+/* line 230, sass/alphenhotel-ozon.scss */
 .room-rent-container .room-rent-wrapper.date-container {
   width: 60%;
 }
 
-/* line 264, sass/alphenhotel-ozon.scss */
+/* line 236, sass/alphenhotel-ozon.scss */
 .ui-widget-header {
   background: #f0d64d;
   border: 1px solid #eccb1e;
   color: #463d10;
 }
 
-/* line 269, sass/alphenhotel-ozon.scss */
+/* line 241, sass/alphenhotel-ozon.scss */
 .ui-state-default, .ui-widget-content .ui-state-default {
   color: #4f7838;
 }
 
-/* line 272, sass/alphenhotel-ozon.scss */
+/* line 244, sass/alphenhotel-ozon.scss */
 #ui-datepicker-div {
   margin-top: -33px;
 }
 
-/* line 276, sass/alphenhotel-ozon.scss */
+/* line 248, sass/alphenhotel-ozon.scss */
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #e2e2e2;
   font-weight: normal;
 }
 
-/* line 280, sass/alphenhotel-ozon.scss */
+/* line 252, sass/alphenhotel-ozon.scss */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #e2e2e2;
@@ -305,7 +272,7 @@
   opacity: 1;
 }
 
-/* line 285, sass/alphenhotel-ozon.scss */
+/* line 257, sass/alphenhotel-ozon.scss */
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #e2e2e2;
@@ -313,9 +280,27 @@
   opacity: 1;
 }
 
-/* line 290, sass/alphenhotel-ozon.scss */
+/* line 262, sass/alphenhotel-ozon.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #e2e2e2;
   font-weight: normal;
+}
+
+@media all and (max-width: 800px) {
+  /* line 268, sass/alphenhotel-ozon.scss */
+  .room-rent-container .room-rent-wrapper .input-holder .input {
+    flex-basis: 100%;
+  }
+
+  /* line 271, sass/alphenhotel-ozon.scss */
+  .room-rent-container .room-rent-wrapper.date-container {
+    width: 100%;
+  }
+
+  /* line 275, sass/alphenhotel-ozon.scss */
+  .room-rent-container .room-rent-wrapper .input-holder .input.date_to input[type=text].datepicker,
+  .room-rent-container .room-rent-wrapper .input-holder .input.date_from input[type=text].datepicker {
+    font-size: 20px;
+  }
 }

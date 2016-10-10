@@ -29,6 +29,22 @@ function ao_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'ao_enqueue_styles', 100 );
 
+/**
+* AJAX REQUESTS
+*/
+function ajax_requests()
+{
+  $ajax = new AjaxRequests();
+  $ajax->send_room_request();
+}
+add_action( 'init', 'ajax_requests' );
+
+// AJAX URL
+function get_ajax_url( $function )
+{
+  return admin_url('admin-ajax.php?action='.$function);
+}
+
 function avada_lang_setup() {
 	$lang = get_stylesheet_directory() . '/languages';
 	load_child_theme_textdomain( 'Avada', $lang );
