@@ -14,7 +14,7 @@
 /* line 14, sass/alphenhotel-ozon.scss */
 .renter-box .fusion-button-wrapper {
   text-align: center !important;
-}
+} 
 /* line 18, sass/alphenhotel-ozon.scss */
 .renter-box .rent-button {
   width: 50% !important;
@@ -302,5 +302,15 @@
   .room-rent-container .room-rent-wrapper .input-holder .input.date_to input[type=text].datepicker,
   .room-rent-container .room-rent-wrapper .input-holder .input.date_from input[type=text].datepicker {
     font-size: 20px;
+  }
+
+  /* line 278, sass/alphenhotel-ozon.scss */
+  .renter-box h1 {
+    font-size: 18px;
+  }
+
+  /* line 281, sass/alphenhotel-ozon.scss */
+  .renter-box .rent-button {
+    width: 100%;
   }
 }
