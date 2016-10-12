@@ -14,10 +14,10 @@
 /* line 14, sass/alphenhotel-ozon.scss */
 .renter-box .fusion-button-wrapper {
   text-align: center !important;
-} 
+}
 /* line 18, sass/alphenhotel-ozon.scss */
 .renter-box .rent-button {
-  width: 50% !important;
+  width: 50%;
   margin: 0 auto;
   border: 5px solid #f1f0eb !important;
   position: relative;
@@ -287,30 +287,167 @@
   font-weight: normal;
 }
 
+/* line 267, sass/alphenhotel-ozon.scss */
+.home-title-hotel {
+  font-size: 2em;
+  color: #4f7838;
+}
+
+/* line 276, sass/alphenhotel-ozon.scss */
+input[type=text],
+input[type=number],
+select,
+textarea {
+  color: #127a6f !important;
+}
+
 @media all and (max-width: 800px) {
-  /* line 268, sass/alphenhotel-ozon.scss */
+  /* line 281, sass/alphenhotel-ozon.scss */
+  body.home #main {
+    margin-top: 0 !important;
+    padding: 10px !important;
+  }
+
+  /* line 285, sass/alphenhotel-ozon.scss */
   .room-rent-container .room-rent-wrapper .input-holder .input {
     flex-basis: 100%;
   }
 
-  /* line 271, sass/alphenhotel-ozon.scss */
+  /* line 288, sass/alphenhotel-ozon.scss */
   .room-rent-container .room-rent-wrapper.date-container {
     width: 100%;
   }
 
-  /* line 275, sass/alphenhotel-ozon.scss */
+  /* line 292, sass/alphenhotel-ozon.scss */
   .room-rent-container .room-rent-wrapper .input-holder .input.date_to input[type=text].datepicker,
   .room-rent-container .room-rent-wrapper .input-holder .input.date_from input[type=text].datepicker {
     font-size: 20px;
   }
 
-  /* line 278, sass/alphenhotel-ozon.scss */
-  .renter-box h1 {
-    font-size: 18px;
+  /* line 295, sass/alphenhotel-ozon.scss */
+  .renter-box-holder {
+    padding: 0 !important;
   }
 
-  /* line 281, sass/alphenhotel-ozon.scss */
+  /* line 298, sass/alphenhotel-ozon.scss */
+  .renter-box h1 {
+    font-size: 18px !important;
+    padding: 0 0 20px 0 !important;
+    color: black;
+  }
+
+  /* line 303, sass/alphenhotel-ozon.scss */
   .renter-box .rent-button {
+    width: 100% !important;
+  }
+
+  /* line 306, sass/alphenhotel-ozon.scss */
+  .post-content h1 {
+    line-height: 1.1;
+    font-size: 1.8em;
+  }
+
+  /* line 310, sass/alphenhotel-ozon.scss */
+  .post-content h2 {
+    line-height: 1.1;
+    font-size: 1.4em;
+  }
+
+  /* line 314, sass/alphenhotel-ozon.scss */
+  .home-title-hotel {
+    font-size: 1.3em;
+  }
+
+  /* line 318, sass/alphenhotel-ozon.scss */
+  .contact-info-container p {
+    text-align: center;
+  }
+
+  /* line 323, sass/alphenhotel-ozon.scss */
+  .fusion-columns .fusion-column:not(.fusion-column-last),
+  .fusion-columns .fusion-column {
+    margin: 0 0 15px 0;
+  }
+
+  /* line 326, sass/alphenhotel-ozon.scss */
+  .fusion-widget-area .widget_nav_menu li {
+    text-align: center;
+  }
+
+  /* line 329, sass/alphenhotel-ozon.scss */
+  #wrapper .fusion-widget-area li > a {
+    font-size: 1.5em;
+  }
+
+  /* line 332, sass/alphenhotel-ozon.scss */
+  #wrapper .fusion-widget-area li > a:before {
+    display: none;
+  }
+
+  /* line 336, sass/alphenhotel-ozon.scss */
+  #comment-input input,
+  #comment-textarea textarea {
     width: 100%;
+  }
+
+  /* line 339, sass/alphenhotel-ozon.scss */
+  .renter-container {
+    margin-top: -50px;
+    padding: 10px;
+  }
+
+  /* line 343, sass/alphenhotel-ozon.scss */
+  .room-rent-container {
+    padding: 10px;
+    font-size: 0.9em;
+    padding: 15px 5px 0 5px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+  }
+
+  /* line 351, sass/alphenhotel-ozon.scss */
+  .room-rent-container h1 {
+    font-size: 1.6em !important;
+  }
+
+  /* line 354, sass/alphenhotel-ozon.scss */
+  .room-rent-container h2 {
+    font-size: 1.3em !important;
+    line-height: 1;
+  }
+
+  /* line 358, sass/alphenhotel-ozon.scss */
+  .room-rent-container h3 {
+    font-size: 1.1em !important;
+    line-height: 1;
+    margin-top: 20px !important;
+  }
+
+  /* line 363, sass/alphenhotel-ozon.scss */
+  .room-rent-container .room-rent-wrapper .input-holder .input {
+    padding: 0 5px 0 5px;
+  }
+
+  /* line 366, sass/alphenhotel-ozon.scss */
+  .room-rent-container .room-rent-wrapper .input-holder .input.date_to input[type=text].datepicker, .room-rent-container .room-rent-wrapper .input-holder .input.date_from input[type=text].datepicker {
+    font-size: 1.2em;
+  }
+
+  /* line 369, sass/alphenhotel-ozon.scss */
+  .room-rent-container .room-rent-wrapper .input-holder .input.date_from, .room-rent-container .room-rent-wrapper .input-holder .input.date_to {
+    flex-basis: 100%;
+  }
+
+  /* line 374, sass/alphenhotel-ozon.scss */
+  .slider-el-rent.el-center.el-text {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 26px !important;
+    white-space: nowrap !important;
+  }
+  /* line 384, sass/alphenhotel-ozon.scss */
+  .slider-el-rent.el-left.el-text, .slider-el-rent.el-left.el-box, .slider-el-rent.el-right.el-text, .slider-el-rent.el-right.el-box {
+    display: none !important;
   }
 }

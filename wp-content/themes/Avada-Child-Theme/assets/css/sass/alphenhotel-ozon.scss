@@ -16,7 +16,7 @@
     }
 
     .rent-button{
-      width: 50% !important;
+      width: 50%;
       margin: 0 auto;
       border: 5px solid #f1f0eb !important;
       position: relative;
@@ -264,7 +264,24 @@
   font-weight: normal;
 }
 
+.home-title-hotel{
+  font-size: 2em;
+  color: $color-green;
+}
+
+input[type=text],
+input[type=number],
+select,
+textarea
+ {
+  color: $color-primary !important;
+}
+
 @media all and (max-width: 800px) {
+  body.home #main{
+    margin-top: 0 !important;
+    padding: 10px !important;
+  }
   .room-rent-container .room-rent-wrapper .input-holder .input{
     flex-basis: 100%;
   }
@@ -275,10 +292,98 @@
  .room-rent-container .room-rent-wrapper .input-holder .input.date_from input[type=text].datepicker{
    font-size: 20px;
  }
+ .renter-box-holder{
+   padding: 0 !important;
+ }
  .renter-box h1{
-   font-size: 18px;
+   font-size: 18px !important;
+   padding: 0 0 20px 0 !important;
+   color: black;
  }
  .renter-box .rent-button{
+   width: 100% !important;
+ }
+ .post-content h1{
+   line-height: 1.1;
+   font-size: 1.8em;
+ }
+ .post-content h2{
+   line-height: 1.1;
+   font-size: 1.4em;
+ }
+ .home-title-hotel{
+   font-size: 1.3em;
+ }
+ .contact-info-container{
+   p {
+     text-align: center;
+   }
+ }
+ .fusion-columns .fusion-column:not(.fusion-column-last),
+ .fusion-columns .fusion-column{
+   margin: 0 0 15px 0;
+ }
+ .fusion-widget-area .widget_nav_menu li{
+   text-align: center;
+ }
+ #wrapper .fusion-widget-area li > a{
+  font-size: 1.5em;
+ }
+ #wrapper .fusion-widget-area li > a:before {
+   display: none;
+ }
+ #comment-input input,
+ #comment-textarea textarea{
    width: 100%;
  }
+  .renter-container{
+    margin-top: -50px;
+    padding: 10px;
+  }
+  .room-rent-container{
+    padding: 10px;
+    font-size: 0.9em;
+    padding: 15px 5px 0 5px;
+    -webkit-border-radius: 38px;
+    -moz-border-radius: 38px;
+    border-radius: 38px;
+  }
+  .room-rent-container h1{
+    font-size: 1.6em !important;
+  }
+  .room-rent-container h2{
+    font-size: 1.3em !important;
+    line-height: 1;
+  }
+  .room-rent-container h3{
+    font-size: 1.1em !important;
+    line-height: 1;
+    margin-top: 20px !important;
+  }
+  .room-rent-container .room-rent-wrapper .input-holder .input{
+    padding: 0 5px 0 5px;
+  }
+  .room-rent-container .room-rent-wrapper .input-holder .input.date_to input[type=text].datepicker, .room-rent-container .room-rent-wrapper .input-holder .input.date_from input[type=text].datepicker{
+    font-size: 1.2em;
+  }
+  .room-rent-container .room-rent-wrapper .input-holder .input.date_from, .room-rent-container .room-rent-wrapper .input-holder .input.date_to{
+    flex-basis: 100%;
+  }
+  .slider-el-rent{
+    &.el-center {
+      &.el-text {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 26px !important;
+        white-space: nowrap !important;
+      }
+    }
+    &.el-left,
+    &.el-right{
+      &.el-text,
+      &.el-box {
+        display: none !important;
+      }
+    }
+  }
 }
