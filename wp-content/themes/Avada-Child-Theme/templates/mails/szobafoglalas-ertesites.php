@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Új szobafoglalás</title>
+<title>Új szoba ajánlatkérés</title>
 <style media="screen">
   table {
   border-collapse: collapse;
@@ -18,7 +18,7 @@
 </style>
 </head>
 <body>
-  <h2>Új szobafoglalás érkezett!</h3>
+  <h2>Új ajánlatkérés érkezett!</h3>
   <h3>Kapcsolattartó adatai:</h3>
   <table>
     <tr>

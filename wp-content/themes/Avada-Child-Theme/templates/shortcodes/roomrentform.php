@@ -1,5 +1,5 @@
-<h1><?php echo __('Szobafoglalás', 'hotel'); ?></h1>
-<h2><?php echo __('Adja meg az alábbi űrlapon a szobafoglaláshoz szükséges adatokat.', 'hotel'); ?></h2>
+<h1><?php echo __('Ajánlatkérés', 'hotel'); ?></h1>
+<h2><?php echo __('Adja meg az alábbi űrlapon az ajánlatkéréshez szükséges adatokat.', 'hotel'); ?></h2>
 
 <form class="" id="mailsend" action="index.html" method="post">
   <div class="room-rent-wrapper date-container">
@@ -18,7 +18,7 @@
 
   <div class="room-rent-wrapper">
       <div class="input-holder">
-        <div class="input input-label"><h3><div class="stn">2</div><?php echo __('Szobafoglalás paraméterek megadása', 'hotel'); ?></h3></div>
+        <div class="input input-label"><h3><div class="stn">2</div><?php echo __('Ajánlatkérés paraméterek megadása', 'hotel'); ?></h3></div>
         <div class="input people_adults">
           <label for="people_adults"><?php echo __('Felnőttek', 'hotel'); ?> *</label>
           <input type="number" name="roomrent[people][adults]" id="people_adults" value="2" min="1" step="1">
@@ -45,14 +45,15 @@
           <select class="" name="roomrent[settings][roomtype]" id="settings_roomtype">
             <option value="">-- <?php echo __('válasszon', 'hotel'); ?> --</option>
             <option value="" disabled="disabled"></option>
-            <option value="Strandard I."><?php echo __('Strandard I. (2 személyes - 1 franciaágy)', 'hotel'); ?></option>
-            <option value="Strandard II."><?php echo __('Strandard II. (2 személyes - 2 x 1 személyes ágy)', 'hotel'); ?></option>
-            <option value="Családi"><?php echo __('Családi (4 személyes - 2 db összenyitható Strandard I./II. szoba)', 'hotel'); ?></option>
+            <option value="Strandard Szoba"><?php echo __('Strandard szoba (2 személyes)', 'hotel'); ?></option>
+            <option value="Komfort Szoba"><?php echo __('Komfort szoba (2 - 4 személyes)', 'hotel'); ?></option>
+            <option value="Superior Családi Szoba"><?php echo __('Superior családi szoba (2 - 4 személyes)', 'hotel'); ?></option>
           </select>
         </div>
         <div class="input setting_children_ages">
           <label for="settings_children_ages"><?php echo __('Gyerek(ek) kora', 'hotel'); ?></label>
           <input type="text" name="roomrent[settings][children_ages]" id="settings_children_ages" placeholder="<?php echo __('Írja be a gyerek(ek) korát.', 'hotel'); ?>">
+          <small style="color: #b3b3b3;"><?=__('Több gyerek esetén vesszővel válassza el.','hotel')?></small>
         </div>
       </div>
   </div>
@@ -81,7 +82,7 @@
         <textarea name="roomrent[contact][msg]" id="contact_msg"></textarea>
       </div>
       <div class="input send-mail">
-        <button type="button" id="mail-sending-btn" class="fusion-button" onclick="ajanlatkeresKuldes();" name="button"><?php echo __('Szobafoglalás küldése', 'hotel'); ?> <i class="fa fa-envelope-o"></i></button>
+        <button type="button" id="mail-sending-btn" class="fusion-button" onclick="ajanlatkeresKuldes();" name="button"><?php echo __('Ajánlatkérés küldése', 'hotel'); ?> <i class="fa fa-envelope-o"></i></button>
       </div>
     </div>
   </div>
@@ -155,9 +156,9 @@ function ajanlatkeresKuldes()
         var resp = jQuery.parseJSON(data);
         if(resp.error == 0) {
           mail_sended = 1;
-          jQuery('#mail-sending-btn').html('<?php echo __('Szobafoglalás elküldve', 'hotel'); ?> <i class="fa fa-check-circle"></i>').removeClass('in-progress').addClass('sended');
+          jQuery('#mail-sending-btn').html('<?php echo __('Ajánlatkérés elküldve', 'hotel'); ?> <i class="fa fa-check-circle"></i>').removeClass('in-progress').addClass('sended');
         } else {
-          jQuery('#mail-sending-btn').html('<?php echo __('Szobafoglalás küldése', 'hotel'); ?> <i class="fa fa-envelope-o"></i>').removeClass('in-progress')
+          jQuery('#mail-sending-btn').html('<?php echo __('Ajánlatkérés küldése', 'hotel'); ?> <i class="fa fa-envelope-o"></i>').removeClass('in-progress')
           mail_sending_progress = 0;
           if(resp.missing != 0) {
             jQuery.each(resp.missing_elements, function(i,e){

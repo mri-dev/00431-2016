@@ -43,7 +43,7 @@ class AjaxRequests
 
     if(!empty($return['missing_elements'])) {
       $return['error']  = 1;
-      $return['msg']    =  __('Kérjük, hogy töltse ki az összes mezőt a szobafoglalás küldéséhez.', 'hotel');
+      $return['msg']    =  __('Kérjük, hogy töltse ki az összes mezőt az ajánlatkérés küldéséhez.', 'hotel');
       $return['missing']= count($return['missing_elements']);
       $this->returnJSON($return);
     }
@@ -68,7 +68,7 @@ class AjaxRequests
     }
 
     $to       = get_option('admin_email');
-    $subject  = sprintf(__('Szobafoglalás érkezett: %s (%s | %s)'), $contact['vezeteknev'].' '.$contact['keresztnev'], $contact['email'], $contact['telefon']);
+    $subject  = sprintf(__('Ajánlatkérés érkezett: %s (%s | %s)'), $contact['vezeteknev'].' '.$contact['keresztnev'], $contact['email'], $contact['telefon']);
 
     ob_start();
   	  include(locate_template('templates/mails/szobafoglalas-ertesites.php'));
@@ -87,7 +87,7 @@ class AjaxRequests
 
     if(!$alert) {
       $return['error']  = 1;
-      $return['msg']    = __('A szobfoglalást jelenleg nem tudtuk elküldeni. Próbálja meg később.', 'hotel');
+      $return['msg']    = __('Az ajánlatkérést jelenleg nem tudtuk elküldeni. Próbálja meg később.', 'hotel');
       $this->returnJSON($return);
     }
     /* */
