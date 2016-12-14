@@ -43,7 +43,7 @@ class AjaxRequests
 
     if(!empty($return['missing_elements'])) {
       $return['error']  = 1;
-      $return['msg']    =  __('Kérjük, hogy töltse ki az összes mezőt az ajánlatkérés küldéséhez.', 'hotel');
+      $return['msg']    =  __('Kérjük, hogy töltse ki az összes mezőt az ajánlatkérés küldéséhez.',  'Avada');
       $return['missing']= count($return['missing_elements']);
       $this->returnJSON($return);
     }
@@ -52,17 +52,17 @@ class AjaxRequests
     if(empty($people['adults']) || $people['adults'] == 0 || $people['adults'] < 0 ){
       $return['error_elements'][] = 'people_adults';
       $return['missing_elements'][] = 'people_adults';
-      $err_elements_text .= ' - '.__('Felnőttek száma: Legalább 1 felnőtt részére', 'hotel') . "\n";
+      $err_elements_text .= ' - '.__('Felnőttek száma: Legalább 1 felnőtt részére',  'Avada') . "\n";
     }
     if($people['children'] != '0' && $settings['children_ages'] == ''){
       $return['error_elements'][] = 'settings_children_ages';
       $return['missing_elements'][] = 'settings_children_ages';
-      $err_elements_text .= ' - '.sprintf(__('Gyermek(ek) kora: Adja meg a %s gyeremek korát.', 'hotel'), $people['children'] ) . "\n";
+      $err_elements_text .= ' - '.sprintf(__('Gyermek(ek) kora: Adja meg a %s gyeremek korát.',  'Avada'), $people['children'] ) . "\n";
     }
 
     if(!empty($return['error_elements'])) {
       $return['error']  = 1;
-      $return['msg']    =  __('A következő mezők hibásan vannak kitöltve', 'hotel').":\n". $err_elements_text;
+      $return['msg']    =  __('A következő mezők hibásan vannak kitöltve',  'Avada').":\n". $err_elements_text;
       $return['missing']= count($return['missing_elements']);
       $this->returnJSON($return);
     }
@@ -87,7 +87,7 @@ class AjaxRequests
 
     if(!$alert) {
       $return['error']  = 1;
-      $return['msg']    = __('Az ajánlatkérést jelenleg nem tudtuk elküldeni. Próbálja meg később.', 'hotel');
+      $return['msg']    = __('Az ajánlatkérést jelenleg nem tudtuk elküldeni. Próbálja meg később.',  'Avada');
       $this->returnJSON($return);
     }
     /* */
