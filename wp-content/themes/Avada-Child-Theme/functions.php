@@ -2,6 +2,7 @@
 define('IFROOT', get_stylesheet_directory_uri() );
 define('DEVMODE', true);
 define('RESOURCES', IFROOT.'/assets' );
+define('IMAGES', IFROOT.'/images' );
 
 // Includes
 require_once "includes/include.php";
@@ -50,3 +51,15 @@ function avada_lang_setup() {
 	load_child_theme_textdomain( 'Avada', $lang );
 }
 add_action( 'after_setup_theme', 'avada_lang_setup' );
+
+function flag_lang_selector()
+{
+  $local = get_locale();
+  ?>
+  <div class="lang-selector">
+    <a class="<?=($local == 'hu_HU')?'selected':''?>" href="<?=str_replace('http://de.','http://',get_option('siteurl',''))?>"><img src="<?=IMAGES?>/flags/hu.png" alt="HU"></a>
+    <a class="<?=($local == 'de_DE')?'selected':''?>"  href="<?=($local == 'de_DE')?get_option('siteurl',''):str_replace('http://','http://de.',get_option('siteurl',''))?>"><img src="<?=IMAGES?>/flags/de.png" alt="DE"></a>
+  </div>
+  <?
+}
+add_action('avada_logo_append', 'flag_lang_selector');
