@@ -65,3 +65,47 @@ function flag_lang_selector()
   <?
 }
 add_action('avada_logo_append', 'flag_lang_selector');
+
+
+/* GOOGLE ANALYTICS & REMARKETING */
+if( defined('DEVMODE') && DEVMODE === false ) {
+	function ga_remarketing_code () {
+		?>
+		<!-- Google remarketingcímke-kód -->
+		<!--------------------------------------------------
+		A remarketingcímkék nem társíthatók személyazonosításra alkalmas adatokkal, és nem helyezhetők el érzékeny kategóriához kapcsolódó oldalakon. A címke beállításával kapcsolatban további információt és útmutatást a következő címen olvashat: http://google.com/ads/remarketingsetup
+		--------------------------------------------------->
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 863242930;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+		</script>
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+		</script>
+		<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/863242930/?guid=ON&amp;script=0"/>
+		</div>
+		</noscript>
+		<?
+	}
+	add_action('wp_footer', 'ga_remarketing_code');
+
+	function ga_tracking_code () {
+		?>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-90211810-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+		<?
+	}
+	add_action('wp_head', 'ga_tracking_code');
+}
