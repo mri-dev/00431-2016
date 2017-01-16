@@ -55,10 +55,12 @@ add_action( 'after_setup_theme', 'avada_lang_setup' );
 function flag_lang_selector()
 {
   $local = get_locale();
+  $domain = str_replace(array('en.', 'de.'), '',get_option('siteurl',''));
   ?>
   <div class="lang-selector">
-    <a class="<?=($local == 'hu_HU')?'selected':''?>" href="<?=str_replace('http://de.','http://',get_option('siteurl',''))?>"><img src="<?=IMAGES?>/flags/hu.png" alt="HU"></a>
-    <a class="<?=($local == 'de_DE')?'selected':''?>"  href="<?=($local == 'de_DE')?get_option('siteurl',''):str_replace('http://','http://de.',get_option('siteurl',''))?>"><img src="<?=IMAGES?>/flags/de.png" alt="DE"></a>
+    <a class="<?=($local == 'hu_HU')?'selected':''?>" href="<?=$domain?>"><img src="<?=IMAGES?>/flags/hu.png" alt="HU"></a>
+    <a class="<?=($local == 'en_US')?'selected':''?>"  href="<?=($local == 'en_US')?get_option('siteurl',''):str_replace('http://','http://en.',$domain)?>"><img src="<?=IMAGES?>/flags/en.png" alt="EN"></a>
+    <a class="<?=($local == 'de_DE')?'selected':''?>"  href="<?=($local == 'de_DE')?get_option('siteurl',''):str_replace('http://','http://de.',$domain)?>"><img src="<?=IMAGES?>/flags/de.png" alt="DE"></a>
   </div>
   <?
 }
